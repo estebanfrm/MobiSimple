@@ -54,3 +54,14 @@ print(f"Costo total: {distancias[destino]}")
 
 # Animación
 animar_ruta(grafo, ruta)
+
+#Costo & limpieza
+TARIFA_POR_SEGUNDO = 2000 
+# Calcular tiempo total de la ruta
+tiempo_total = distancias[destino]
+costo_total = tiempo_total * TARIFA_POR_SEGUNDO
+
+print(f"\n🕒 Tiempo total: {tiempo_total} segundos")
+print(f"💰 Costo del viaje: ${costo_total:.2f}")
+
+print("\n🔁 Reiniciando sistema para el siguiente pasajero...\n")
