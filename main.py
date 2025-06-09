@@ -17,3 +17,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# LLAMAR LA FUNCION DEL GRAFO
+from grafo.grafo import construir_grafo
+
+grafo = construir_grafo()
