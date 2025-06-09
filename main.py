@@ -23,3 +23,18 @@ if __name__ == "__main__":
 from grafo.grafo import construir_grafo
 
 grafo = construir_grafo()
+
+
+#LLAMAR A LA FUNCION GRAFO VISUAL
+
+from grafo.grafo_visual import visualizar_grafo
+
+# Mostrar el grafo
+visualizar_grafo(grafo)
+
+# Pedir origen y destino
+origen = int(input("Ingrese el nodo de origen (0-5): "))
+destino = int(input("Ingrese el nodo de destino (0-5): "))
+
+# Mostrar grafo resaltando origen y destino
+visualizar_grafo(grafo, origen, destino)
