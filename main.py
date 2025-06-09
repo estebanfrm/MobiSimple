@@ -16,5 +16,10 @@ def main():
         print("Opción no válida.")
 
 if __name__ == "__main__":
-    main() 
+  
+    main()
 
+# LLAMAR LA FUNCION DEL GRAFO
+from grafo.grafo import construir_grafo
+
+grafo = construir_grafo()
