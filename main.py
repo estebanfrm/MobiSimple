@@ -38,3 +38,19 @@ destino = int(input("Ingrese el nodo de destino (0-5): "))
 
 # Mostrar grafo resaltando origen y destino
 visualizar_grafo(grafo, origen, destino)
+
+#Importar dijktra & la animacion
+
+from grafo.dijkstra import dijkstra_simple, reconstruir_ruta
+from grafo.animacion import animar_ruta
+
+# Calcular camino más corto
+distancias, predecesores = dijkstra_simple(grafo, origen)
+ruta = reconstruir_ruta(predecesores, destino)
+
+# Mostrar resultado
+print(f"\nRuta más corta: {' → '.join(map(str, ruta))}")
+print(f"Costo total: {distancias[destino]}")
+
+# Animación
+animar_ruta(grafo, ruta)
